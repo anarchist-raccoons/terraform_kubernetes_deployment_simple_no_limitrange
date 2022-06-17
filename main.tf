@@ -86,7 +86,7 @@ resource "kubernetes_service" "default" {
     }
 
     #load_balancer_ip = "${var.load_balancer_ip}"
-    load_balancer_ip = var.load_balancer_ip ? var.load_balancer_ip : null
+    load_balancer_ip = var.load_balancer_ip == "" ? null : var.load_balancer_ip
     load_balancer_source_ranges = "${var.load_balancer_source_ranges}"
 
     type = "${var.service_type}"
