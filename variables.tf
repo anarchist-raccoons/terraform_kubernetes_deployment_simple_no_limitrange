@@ -55,3 +55,7 @@ variable "secondary_volume_name" {
 variable "secondary_pvc_claim_name" {
   default = ""
   }
+
+variable "secondary_sub_path" {
+  default = ""
+}
