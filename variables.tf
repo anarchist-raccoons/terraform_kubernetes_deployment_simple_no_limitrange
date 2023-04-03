@@ -52,3 +52,6 @@ variable "secondary_mount_path" {
 variable "secondary_volume_name" {
   default = ""
 }
+variable "secondary_pvc_claim_name" {
+  default = ""
+  }
