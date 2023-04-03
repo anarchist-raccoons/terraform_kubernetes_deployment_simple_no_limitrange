@@ -44,18 +44,3 @@ variable "service_type" {
 variable "load_balancer_ip" {
   default = ""
 }
-
-variable "primary_mount_path" {
-}
-variable "secondary_mount_path" {
-}
-variable "secondary_volume_name" {
-  default = ""
-}
-variable "secondary_pvc_claim_name" {
-  default = ""
-  }
-
-variable "secondary_sub_path" {
-  default = ""
-}
